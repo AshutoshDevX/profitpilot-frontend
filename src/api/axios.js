@@ -2,7 +2,7 @@ import axios from "axios";
 import toast from "react-hot-toast";
 
 const api = axios.create({
-  baseURL: import.meta.env.REACT_APP_BACKEND_URL || "http://localhost:5000/api",
+  baseURL: import.meta.env.VITE_API_BACKEND_URL || "http://localhost:5000/api",
 });
 
 api.interceptors.request.use((config) => {
