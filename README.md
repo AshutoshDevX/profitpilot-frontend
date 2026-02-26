@@ -83,7 +83,10 @@ ProfitPilot is a promising project that leverages machine learning and web devel
    - 
 **Sample Ouptput** <br> 
 
-<img src='https://github.com/codeasarjun/ProfitPilot/blob/main/img/input.png'>
+<img src='https://github.com/AshutoshDevX/profitpilot-frontend/blob/main/src/assets/prediction_form.png'>
 <hr>
-<img src='https://github.com/codeasarjun/ProfitPilot/blob/main/img/result.png'>
+<img src='https://github.com/AshutoshDevX/profitpilot-frontend/blob/main/src/assets/predictions.png'>
 <hr>
+<img src='https://github.com/AshutoshDevX/profitpilot-frontend/blob/main/src/assets/insights.png'>
+<hr>
+
