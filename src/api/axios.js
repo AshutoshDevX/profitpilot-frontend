@@ -2,7 +2,7 @@ import axios from "axios";
 import toast from "react-hot-toast";
 
 const api = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: process.env.REACT_APP_BACKEND_URL || "http://localhost:5000/api",
 });
 
 api.interceptors.request.use((config) => {
@@ -24,7 +24,7 @@ api.interceptors.response.use(
       try {
         const refreshToken = localStorage.getItem("refresh_token");
 
-        const res = await axios.post("http://localhost:5000/api/auth/refresh", {}, {
+        const res = await axios.post(`${api.defaults.baseURL}/auth/refresh`, {}, {
           headers: {
             Authorization: `Bearer ${refreshToken}`
           }
